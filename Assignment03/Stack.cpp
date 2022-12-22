@@ -53,7 +53,7 @@ void Stack<T>::display()
         cout << "\nStack is Empty" << endl;
     else {
         cout << "\nStack: ";
-        for (int i = 0; i <= top; i++)
+        for (int i = 1; i <= top; i++)
             cout << array[i] << " ";
         cout << endl;
     }
