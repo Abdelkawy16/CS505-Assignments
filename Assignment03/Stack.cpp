@@ -50,9 +50,9 @@ void Stack<T>::display()
 {
     // if top is less than 0, that means stack is empty
     if (top < 0)
-        cout << "Stack is Empty" << endl;
+        cout << "\nStack is Empty" << endl;
     else {
-        cout << "Stack: ";
+        cout << "\nStack: ";
         for (int i = 0; i <= top; i++)
             cout << array[i] << " ";
         cout << endl;

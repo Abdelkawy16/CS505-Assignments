@@ -12,13 +12,14 @@ int main()
     cout << "Stack size: " << stack.stackSize();
     stack.push(3);
     stack.push(4);
+    stack.display();
     cout << "\nStack is full: " << stack.stackIsFull();
     stack.push(5);
     stack.pop();
+    stack.display();
     stack.pop();
     stack.pop();
     stack.pop();
     stack.pop();
     cout << "\nStack is empty: " << stack.stackIsEmpty();
-    std::cout << "Hello World!\n";
 }
