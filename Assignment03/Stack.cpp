@@ -38,7 +38,7 @@ T* Stack<T>::push(T element)
 template <class T>
 void Stack<T>::pop()
 {
-    if (top < 0) {
+    if (top == 0) {
         cout << "Stack is empty" << endl;
         return;
     }
@@ -49,11 +49,11 @@ template <class T>
 void Stack<T>::display()
 {
     // if top is less than 0, that means stack is empty
-    if (top < 0)
+    if (top == 0)
         cout << "\nStack is Empty" << endl;
     else {
         cout << "\nStack: ";
-        for (int i = 0; i <= top; i++)
+        for (int i = 1; i <= top; i++)
             cout << array[i] << " ";
         cout << endl;
     }
