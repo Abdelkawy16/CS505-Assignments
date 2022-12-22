@@ -1,17 +1,18 @@
 #pragma once
 #define BOUND 4
+template <class T>
 class Stack
 {
 public:
 	int top;
 	int length;
-	int* array;
+	T* array;
 	Stack();
-	int* create_new(int* a);
-	int* push(int item);
+	T* create_new(T* a);
+	T* push(T item);
 	void pop();
 	bool stackIsEmpty();
-	int stackTop();
+	T stackTop();
 	bool stackIsFull();
 	int stackSize();
 	void display();
